@@ -13,8 +13,14 @@ const page = async ({searchParams}: WorkspacePageProps) => {
 
   const {prompt, id} = await searchParams; 
   return (
-    <WorkspaceClient/>
+
+    <WorkspaceClient 
+    initialPrompt={prompt ?? null} 
+    userCredits={10}
+    userId={userId }
+    userPlan='free'
+    />
   )
 }
 
-export default page
+export default page ;

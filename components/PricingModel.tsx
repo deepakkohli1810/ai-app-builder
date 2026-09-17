@@ -17,7 +17,7 @@ interface PricingModalProps {
 
 const  PricingModel = ({children , reason = "upgrade"} : PricingModalProps) => {
   const title 
-  = reason === "credits" ? "Upgrade your plan" : "Out of credits";
+  = reason === "credits" ? "Upgrade your plan" : "Upgrade your plan";
   const description = 
   reason === "credits"
   ? "You have used all your credits. Upgrade your plan to continue using the app."
